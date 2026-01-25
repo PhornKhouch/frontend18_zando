@@ -1,0 +1,10 @@
+GitHub & Git 
+
+What is GitHub ?   
+    - Repository 
+    - Pull request / Commit
+    - Push 
+    - Branch 
+    - Merge 
+   
+What is Git ? 

@@ -1,0 +1,487 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.header-container{
+    width: 100%;
+    height: 60px;
+    background-color: white;
+    box-shadow: 1px 1px 3px rgb(240, 236, 236);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+
+.container{
+    width:80%;
+    height: 100%;
+    /* background-color: green; */
+    margin: auto;
+}
+
+.container nav{
+    width: 30%;
+    height: 100%;
+    float: left;
+}
+
+.container nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.container nav ul li{
+    float: left;
+}
+
+.container nav ul li a{
+    display: block;
+    text-decoration: none;
+    opacity: 0.8;
+    font-weight: bold   ;
+    color: black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 20px 12px;
+}
+
+
+.logo {
+    width: 15%;
+    height: 100%;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img{
+    height: 30px;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+/* From Uiverse.io by alexruix */ 
+.input {
+  max-width: 190px;
+  background-color: #f5f5f5;
+  color: #242424;
+  padding: .10rem .5rem;
+  min-height: 40px;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  line-height: 1;
+  box-shadow: 0px 10px 20px -18px;
+}
+
+input:focus {
+  border-bottom: 2px solid #5b5fc7;
+  border-radius: 4px 4px 2px 2px;
+}
+
+input:hover {
+  outline: 1px solid lightgrey;
+}
+
+
+
+/* Homepage */
+.Homepage{
+    width: 80%;
+    height: 650px;
+    background-position: center;
+    background-size: cover;
+    background-color: lightgrey;
+    background-image:url('img/Chinese\ New\ Year_Main_ZANDO\ \(2160x1066\)-2.jpg');
+    margin: auto;
+}
+
+
+.Homepage .box-btn{
+    width: 350px;
+    height: 100px;
+    /* background-color: green; */
+    transform: translate(450px, 530px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* From Uiverse.io by vikiWayne */ 
+.button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  /* letter-spacing: 5px; */
+  text-transform: uppercase;
+  cursor: pointer;
+  color: #2c9caf;
+  transition: all 1000ms;
+  font-size: 15px;
+  position: relative;
+  overflow: hidden;
+  outline: 2px solid #2c9caf;
+}
+
+button:hover {
+  color: #ffffff;
+  transform: scale(1.1);
+  outline: 2px solid #70bdca;
+  box-shadow: 4px 5px 17px -4px #268391;
+}
+
+button::before {
+  content: "";
+  position: absolute;
+  left: -50px;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background-color: #2c9caf;
+  transform: skewX(45deg);
+  z-index: -1;
+  transition: width 1000ms;
+}
+
+button:hover::before {
+  width: 250%;
+}
+
+
+.brand-container{
+    width: 80%;
+    height: 80px;
+    /* background-color: green; */
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.brand-container .brand-name{
+    width: 15%;
+    height: 100%;
+    /* background-color: grey; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.brand-container .brand-name img{
+    height: 150px;
+}
+
+.bannner-container{
+    width: 80%;
+    height: 300px;
+    margin-top: 30px;
+    margin: auto;
+    background-position: center;
+    background-size: cover;
+    /* background-color: lightpink; */
+    background-image: url('img/banner_\(zando\).jpg');
+}
+
+.customer-favorite{
+    width: 80%;
+    /* height: 400px; */
+    overflow: hidden;
+    margin: auto;
+    margin-top: 30px;
+}
+
+
+.customer-favorite .title{
+    width: 100%;
+    height: 30px;
+}
+
+.customer-favorite .title h1{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    color: black;
+    opacity: 0.8;
+}
+
+.card-product{
+    width: 100%;
+    /* height: 400px; */
+    /* background-color: green; */
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+.card-product .card {
+    width: 23.5%;
+    height: 450px;
+    /* background-color: violet; */
+}
+
+
+.card-product .card .image {
+    width: 100%;
+    height: 85%;
+    background-color: yellow;
+    overflow: hidden;
+    cursor: pointer;
+}
+.card-product .card .image  img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+}
+.card-product .card .infor {
+    width: 100%;
+    height: 15%;
+    background-color: rgba(229, 227, 224, 0.172);
+}
+
+.card-product .card .image  img:hover{
+    transform: scale(1.2);
+}
+
+
+.card-product .card .infor h4 ,p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    transform: translateY(5px);
+    margin-top: 5px;
+    margin-left: 10px;
+    line-height: 15px;
+}
+
+.card .discount{
+    width: 20px;
+    height: 20px;
+    padding: 5px 25px;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: absolute;
+    transform: translate(10px,10px);
+    border-radius: 5px;
+    z-index: 2;
+}
+
+.popular-products{
+    width: 80%;
+    overflow: hidden;
+    background-color: lightgrey;
+    margin: auto;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.pop-item-prd{
+    width: 32%;
+    height: 600px;
+    background-color: yellow;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.pop-item-prd img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+}
+.pop-item-prd img:hover{
+    transform: scale(1.1);
+}
+
+.pop-item-prd:nth-child(4),
+.pop-item-prd:nth-child(5){
+    width: 49%;
+    margin-top: 20px;
+}
+
+/* Product Detail  */
+.product-detail{
+    width: 80%;
+    /* background-color: lightgrey; */
+    overflow: hidden;
+    margin: auto;
+    margin-top: 30px;
+}
+
+
+.pro-img-review{
+    width: 50%;
+    /* height: 850px; */
+    overflow: hidden;
+    /* background: pink; */
+    float: left;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+
+
+.pro-infor{
+    width: 48%;
+    margin-left: 2%;
+    height: 700px;
+    /* background-color: blue; */
+    float: left;
+}
+
+.small-img-container{
+    width: 15%;
+    height: 100%;
+    float: left;
+    /* background-color: rgb(69, 56, 56); */
+    
+}
+
+.small-img-container .img-item{
+    padding: 5px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 160px;
+    /* background-color: brown; */
+}
+
+.small-img-container .img-item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    outline: 1px solid black;
+}
+
+
+.big-img{
+    width: 85%;
+    height: 700px;
+    background-color: rgb(69, 56, 56);
+    float: left;
+}
+.big-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.pro-infor .price-infor{
+    width:100% ;
+    height: 70px;
+    /* background-color: green; */
+}
+
+.pro-infor .price-infor h2, h3{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 10px;
+    line-height: 20px;
+    color: red;
+}
+
+.pro-infor .color-available{
+    width: 100%;
+    height: 200px;
+    /* background-color: blue; */
+}
+
+.price-infor .color-available p{
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 10px;
+
+}
+
+.pro-infor .color-available .color-option{
+    width: 17%;
+    height: 150px;
+    /* background-color: brown; */
+    margin-left: 10px;
+}
+
+.pro-infor .color-available .color-option img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    outline: 1px solid black;
+  }
+
+.pro-infor .size-available{
+    width: 100%;
+    height: 60px;
+    /* background-color: purple; */
+}
+
+.pro-infor .size-available h4{
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 10px;
+    /* color: white; */
+    margin: 0px 10px;
+}
+
+.pro-infor .size-available .size-opt{
+    width: 50%;
+    height: 40px;
+    /* background-color: brown; */
+    /* margin-left: 10px; */
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+    /* align-items: center; */
+}
+
+.pro-infor .size-available .size-opt .box-opt{
+    width: 15%;
+    height: 30px;
+    background-color: rgb(175, 155, 155);
+    /* border: 1px solid black; */
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    float: left;
+    margin-right: 10px;
+    margin-top: 5px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.pro-infor .button-cart{
+    width: 100%;
+    height: 50px;
+    /* background-color: brown; */
+    margin-top: 20px;
+}
+
+.btn-add-cart{
+    width: 90%;
+    height: 100%;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    float: left;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.fav-btn{
+    width: 9%;
+    height: 100%;
+    background-color: rgba(128, 128, 128, 0.54);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+    margin-left: 1%;
+}
